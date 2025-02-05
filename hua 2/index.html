@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Valentines Day</title>
+  <title>PORN</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     .gradient-background {
@@ -32,15 +32,15 @@
   <div class="flex items-center justify-center h-screen">
     <div class="flex flex-col items-center p-4">
       <img id="imageDisplay" src="./images/image1.gif" alt="Cute kitten with flowers" class="rounded-md h-[300px]" style="object-fit: cover;" />
-      <h2 id="valentineQuestion" class="text-4xl font-bold italic text-[#bd1e59] my-4">呂芊嬅妳要當我的女朋友嗎?</h2>
+      <h2 id="valentineQuestion" class="text-4xl font-bold italic text-[#bd1e59] my-4">是否已滿18歲?</h2>
       <div class="flex gap-4 pt-[20px] items-center" id="responseButtons">
         <button id="yesButton"
           class="bounce2 inline-flex items-center justify-center whitespace-nowrap rounded-md text-[20px] font-medium disabled:pointer-events-none disabled:opacity-50 hover:bg-green-400 min-h-12 min-w-[75px] px-4 py-2 bg-green-500 text-white transition">
-          好
+          是
         </button>
         <button id="noButton"
           class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-[20px] font-medium transition disabled:pointer-events-none disabled:opacity-50 hover:bg-red-700 h-12 min-w-[75px] w-auto px-4 py-2 bg-red-500 text-white">
-          不要
+          否
         </button>
       </div>
     </div>
@@ -60,12 +60,12 @@
     let fontSize = 20; // Starting font size in pixels
     const imagePaths = [
       "./images/image1.gif",
-      "./images/image2.gif",
-      "./images/image3.gif",
-      "./images/image4.gif",
-      "./images/image5.gif",
-      "./images/image6.gif",
-      "./images/image7.gif"
+      "./images/image1.gif",
+      "./images/image1.gif",
+      "./images/image1.gif",
+      "./images/image1.gif",
+      "./images/image6.jpg",
+      "./images/image7.jpg"
     ];
   
     noButton.addEventListener('click', function() {
@@ -79,14 +79,14 @@
         yesButton.style.width = `${buttonWidth}px`;
         yesButton.style.fontSize = `${fontSize}px`; // Update font size
         if (noClickCount < 6) {
-          noButton.textContent = ["不要", "確定嗎?", "拜託", "不要這樣 :(", "傷心了", "我要哭了..."][noClickCount];
+          noButton.textContent = ["真的嗎", "確定嗎?", "請在確認一次", "再給你一次機會 :(", "認真？", "你好棒滾去睡覺吧"][noClickCount];
         }
       }
     });
   
     yesButton.addEventListener('click', () => {
-      imageDisplay.src = './images/image7.gif'; // Change to image7.gif
-      valentineQuestion.textContent = "Yayyy!! :3"; // Change the question text
+      imageDisplay.src = './images/image7.jpg'; // Change to image7.gif
+      valentineQuestion.textContent = "黃宗慶請戒色，你的店要倒了"; // Change the question text
       responseButtons.style.display = 'none'; // Hide both buttons
       confetti(); // Trigger confetti animation
     });
